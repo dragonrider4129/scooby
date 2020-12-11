@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Welcome to Employee Wage Computation Program on Master Branch"
 
-
 IS_PART_TIME=1
 IS_FULL_TIME=2
 MAX_HRS_IN_MONTH=100
@@ -59,5 +58,9 @@ echo "Total Salary: $totalSalary"
 >>>>>>> UC-5-Wages-foramonth
 =======
 totalSalary=$(( $totalWorkHours * $EMP_RATE_PER_HR ));
+echo -e "\n::::::::::::Printing salary stored day wise in an array:::::::::::::::"
+echo ${empDailyWage[@]}
+echo -e "\n::::::::::::Printing salary stored day wise in dictionary:::::::::::::::"
+echo ${dayWiseWages[@]}
 echo "Total salary: $totalSalary"
 >>>>>>> UC-7-Get-workhours
